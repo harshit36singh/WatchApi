@@ -12,6 +12,24 @@ public class ActuatorService {
     private final WebClient client = WebClient.create();
 
     public Mono<Map> health(String actuator) {
-        return client.get().uri(actuator + "/health").retrieve().bodyToMono(Map.class);
+        return client.get()
+                .uri(actuator + "/health")
+                .retrieve()
+                .bodyToMono(Map.class);
     }
+
+    public Mono<Map> requests(String actuator) {
+        return client.get()
+                .uri(actuator + "/metrics/http.server.requests")
+                .retrieve()
+                .bodyToMono(Map.class);
+    }
+
+    public Mono<Map> requestByStatus(String actuator, int status) {
+        return client.get()
+                .uri(actuator + "/metrics/http.server.requests?tag=status:" + status)
+                .retrieve()
+                .bodyToMono(Map.class);
+    }
+
 }
