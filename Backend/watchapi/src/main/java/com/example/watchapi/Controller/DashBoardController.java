@@ -21,7 +21,7 @@ public class DashBoardController {
 
 
     @GetMapping("/dashboard")
-    public Mono<Map<String,Object>> dashbaord(@RequestParam String actautorurl ){
-        return actuatorDash.dashboard(actautorurl);
+    public Mono<Map<String,Object>> dashboard(@RequestParam String actuatorurl ){
+        return actuatorDash.dashboard(actuatorurl);
     }
 }
