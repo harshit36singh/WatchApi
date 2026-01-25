@@ -21,13 +21,13 @@ A real-time monitoring dashboard for tracking Spring Boot application endpoints 
 ### Overview Tab
 ![Overview Tab](./Screenshot/Img1.png)
 
-### Metrics Tab
+### Recent Tab
 ![Metrics Tab](./Screenshot/Img2.png)
 
 ### Unused Tab
 ![Unused Tab](./Screenshot/Img3.png)
 
-### Recent Tab
+### Metrics Tab
 ![Recent Tab](./Screenshot/Img4.png)
 
 
