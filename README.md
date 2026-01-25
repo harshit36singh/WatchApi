@@ -188,4 +188,4 @@ fetch(`${API_BASE}/metrics?actuatorUrl=http://your-app:port/actuator`)
 
 - Tables may not be responsive on very small screens (<480px)
 - Large number of endpoints (>1000) may cause performance issues
-- Not Every Info is suppoed to be accurate 
+- Not Every Info is supposed to be accurate 
